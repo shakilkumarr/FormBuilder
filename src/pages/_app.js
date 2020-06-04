@@ -30,9 +30,6 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'LatoLight';
       src: url('/static/fonts/Lato-Light.ttf');
-      src: url('/static/fonts/Lato-LightItalic.ttf');
-      src: url('/static/fonts/Lato-Thin.ttf');
-      src: url('/static/fonts/Lato-ThinItalic.ttf');
   }
   @font-face {
     font-family: 'LatoLightItalic';
