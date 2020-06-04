@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100%;
 `;
 
 export const HeaderContainer = styled.div`
@@ -11,7 +12,7 @@ export const HeaderContainer = styled.div`
   height: 8rem;
   justify-content: center;
   align-items: center;
-  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #A7A4A4;
+  box-shadow: 0.4rem 0 0.8rem 0.4rem #A7A4A4;
   position: fixed;
 `;
 
