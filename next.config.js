@@ -1,7 +1,13 @@
 const withFonts = require('next-fonts');
 
 module.exports = withFonts({
-  webpack(config, options) {
-    return config;
-  }
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/HomePage' },
+      '/home': { page: '/HomePage' },
+    }
+  },
 });

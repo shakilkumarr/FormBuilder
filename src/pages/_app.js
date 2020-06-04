@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Head from 'next/head';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -43,11 +44,29 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'LatoThinItalic';
       src: url('/static/fonts/Lato-ThinItalic.ttf');
   }
+  html,
+  body,
+  div#__next{
+    height: 100%;
+  }
+  html {
+    font-size: 10px;
+  }
+  body {
+    margin: 0;
+    font-family: 'LatoRegular', arial, sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+  #__next-prerender-indicator {
+    display: none;
+  }
 `;
 
 const MyApp = ({ Component, pageProps }) => (
   <React.Fragment>
     <GlobalStyle />
+    <Head><title>Form Builder</title></Head>
     <Component {...pageProps} />
   </React.Fragment>
 );
