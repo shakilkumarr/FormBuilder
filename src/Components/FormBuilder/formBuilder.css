@@ -1,0 +1,24 @@
+.flex-auto-grow-shrink {
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+.error_text_area {
+  border-color: #F52908 !important;
+}
+.warning_text_area {
+  border-color: #FF8800 !important;
+}
+.error > .ant-select-selection {
+  border-color: #F52908;
+}
+.error > .flex-auto-grow-shrink > .ant-input{
+  border-color: #F52908;
+}
+.error > .flex-auto-grow-shrink > .ant-input-group-wrapper{
+  border: 1px solid #F52908;
+}
+
+.priceInput input{
+  text-align: right;
+}

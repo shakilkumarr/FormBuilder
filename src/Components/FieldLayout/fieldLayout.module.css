@@ -1,0 +1,41 @@
+.columnContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.columnContainer:last-child {
+  margin-bottom: 0;
+}
+
+.fieldC {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 0%;
+  min-width: 0;
+  margin-bottom: 2.4rem;
+  margin-right: 2.4rem;
+  position: relative;
+}
+
+.fieldC:last-child {
+  margin-right: 0;
+}
+
+.flex-item-4 {
+  flex: 0 1 calc(33.33% - 1.6rem);
+}
+.flex-item-6 {
+  flex: 0 1 calc(50% - 1.2rem);
+}
+.flex-item-12 {
+  flex: 0 1 100%;
+}
+
+.flexAutoGrowShrink {
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+.rowContainer {
+  background-color: transparent;
+}
